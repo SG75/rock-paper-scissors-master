@@ -1,0 +1,82 @@
+:root {
+  /* Colors */
+
+  /* ### Primary */
+
+  --Scissors-Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
+  --Paper-Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
+  --Rock-Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+  --Lizard-Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
+  --Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+
+  /* ### Neutral */
+
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Score-Text: hsl(229, 64%, 46%);
+  --Header-Outline: hsl(217, 16%, 45%);
+
+  /* ### Background */
+
+  --Radial-Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(
+    circle at 50% 50%,
+    hsl(241, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  width: 100%;
+}
+
+.score {
+  font-size: 2rem;
+  display: flex;
+
+  justify-content: space-between;
+  border: 2px solid var(--Header-Outline);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  width: 60%;
+}
+
+.score div {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+}
+
+.score__title {
+  font-size: 0.8rem;
+  color: var(--Score-Text);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.player_score {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
